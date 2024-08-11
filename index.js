@@ -9,8 +9,8 @@ app.use(bodyParser.json()) //using body parser
 
 //creating a route
 app.get("/", (req, res) =>{  
-    const a = req.query("a")
-    const b = req.query("b")
+    const a = req.query.a
+    const b = req.query.b
     const sum = parseInt(a) + parseInt(b);
     return res.json({
         a,
@@ -18,4 +18,7 @@ app.get("/", (req, res) =>{
         sum
     })
 })
+// app.listen(port, ()=>{
+//     console.log("Server is runnin at port: ", port)
+// })
 module.exports = app;
