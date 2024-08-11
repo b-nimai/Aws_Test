@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express() 
-const port = 80 //drfining the port 
+const port = 3000 //drfining the port 
 
 // for extracting the request body from request
 const bodyParser = require("body-parser") 
